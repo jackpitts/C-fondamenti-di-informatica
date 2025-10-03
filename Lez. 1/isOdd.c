@@ -4,6 +4,10 @@ int main(){
     int num;
     printf("Inserisci un numero:");
     scanf("%d", &num);
-    printf("Il doppio é %d", num * 2);
+    if ((num % 2 != 0) || (num > 10 && num < 20)) {
+        printf("OK");
+    } else {
+        printf("notOK");
+    }
     return 0;
 }
