@@ -1,10 +1,14 @@
 #include <stdio.h>
 
 int main(){
-    int num;
-    printf("Inserisci un numero:");
+    int num, min, max;
+    printf("Inserisci un numero: ");
     scanf("%d", &num);
-    if ((num % 2 != 0) || (num > 10 && num < 20)) {
+    printf("Inserisci un massimo: ");
+    scanf("%d", &max);
+    printf("Inserisci un minimo: ");
+    scanf("%d", &min);
+    if ((num % 2 != 0) || (num > min && num < max)) {
         printf("OK");
     } else {
         printf("notOK");
