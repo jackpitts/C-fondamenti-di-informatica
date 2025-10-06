@@ -5,6 +5,7 @@
         "3numbersMax.C": "cpp",
         "firstNat.C": "cpp",
         "toLowercase.C": "cpp",
-        "maxNumber.C": "cpp"
+        "maxNumber.C": "cpp",
+        "isOddInSequence.C": "cpp"
     }
 }
