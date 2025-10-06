@@ -4,6 +4,7 @@
         "maximus.C": "cpp",
         "3numbersMax.C": "cpp",
         "firstNat.C": "cpp",
-        "toLowercase.C": "cpp"
+        "toLowercase.C": "cpp",
+        "maxNumber.C": "cpp"
     }
 }
