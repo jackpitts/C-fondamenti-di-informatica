@@ -6,7 +6,7 @@ int main() {
 	int max, i;
 
 	for (i = 0; i < 3; i++) {
-        printf("Inserisci il numero %d: ", i + 1);
+        printf("Inserisci il numero %d intero: ", i + 1);
 		scanf("%d", &numeri[i]);
 	}
 
