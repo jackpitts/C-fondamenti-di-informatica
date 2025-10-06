@@ -6,6 +6,8 @@
         "firstNat.C": "cpp",
         "toLowercase.C": "cpp",
         "maxNumber.C": "cpp",
-        "isOddInSequence.C": "cpp"
+        "isOddInSequence.C": "cpp",
+        "gameEvenOdd.C": "cpp",
+        "maximum.C": "cpp"
     }
 }
