@@ -20,17 +20,17 @@ int main () {
         if (somma % 2 == 0) {
             count_pari++;
             count_dispari = 0;
-            printf("PARI!\n");
+            printf("PARI VINCE IL ROUND!\n");
         } else {
             count_dispari++;
             count_pari = 0;
-            printf("DISPARI!\n");
+            printf("DISPARI VINCE IL ROUND!\n");
         }
         if (count_pari == 2) {
-            printf("Pari vince due volte di fila!\n");
+            printf("PARI VINCE LA PARTITA!\n");
             return 0;
         } else if (count_dispari == 2) {
-            printf("Dispari vince due volte di fila!\n");
+            printf("DISPARI VINCE LA PARTITA!\n");
             return 0;
         }
     }
