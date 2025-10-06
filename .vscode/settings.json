@@ -8,6 +8,10 @@
         "maxNumber.C": "cpp",
         "isOddInSequence.C": "cpp",
         "gameEvenOdd.C": "cpp",
-        "maximum.C": "cpp"
+        "maximum.C": "cpp",
+        "double.C": "cpp",
+        "isLeap.C": "cpp",
+        "isOdd.C": "cpp",
+        "isOddOrInInterval.C": "cpp"
     }
 }
