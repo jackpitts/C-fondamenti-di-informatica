@@ -1,11 +1,5 @@
 {
     "files.associations": {
-        "fibonacci.C": "cpp",
-        "alphabet.C": "cpp"
-    },
-    "code-runner.runInTerminal": true,
-    "code-runner.fileDirectoryAsCwd": true,
-    "code-runner.executorMap": {
-        "cpp": "g++ \"$fullFileName\" -o \"$fileNameWithoutExt\" && \"./$fileNameWithoutExt\""
+        "toLowercase.C": "cpp"
     }
 }
