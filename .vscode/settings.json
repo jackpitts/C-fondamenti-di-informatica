@@ -1,17 +1,11 @@
 {
     "files.associations": {
-        "asd.C": "cpp",
-        "maximus.C": "cpp",
-        "3numbersMax.C": "cpp",
-        "firstNat.C": "cpp",
-        "toLowercase.C": "cpp",
-        "maxNumber.C": "cpp",
-        "isOddInSequence.C": "cpp",
-        "gameEvenOdd.C": "cpp",
-        "maximum.C": "cpp",
-        "double.C": "cpp",
-        "isLeap.C": "cpp",
-        "isOdd.C": "cpp",
-        "isOddOrInInterval.C": "cpp"
+        "fibonacci.C": "cpp",
+        "alphabet.C": "cpp"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.executorMap": {
+        "cpp": "g++ \"$fullFileName\" -o \"$fileNameWithoutExt\" && \"./$fileNameWithoutExt\""
     }
 }
