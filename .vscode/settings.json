@@ -4,6 +4,7 @@
         "alphabet.C": "cpp",
         "fibonacci.C": "cpp",
         "calcolatrice.C": "cpp",
-        "vectors.C": "cpp"
+        "vectors.C": "cpp",
+        "Ex1.C": "cpp"
     }
 }
