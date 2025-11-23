@@ -1,41 +1,21 @@
-#include <iostream>
+#include <stdio.h>
 
 int main () {
 
-    int n = 1, min, max, sum = 0, count = 0;
+    for (int i = -20; i <= 197; i += 7) {
+        
+        if ((32 + ((float)i * 9) / 5) - (float)i != 100) {
 
-    while (n != 0) {
+            printf("%.2f C -> ", (float)i);
+            printf("%.2f F\n", (32 + ((float)i * 9) / 5));
 
-        printf("Inserisci un numero intero: ");
-        scanf("%d", &n);
+        } else {
 
-        if (n == 0) break;
+            printf("Differenza = 100, ");
+            printf("%.2f C -> ", (float)i);
+            printf("%.2f F\n", (32 + ((float)i * 9) / 5));
 
-        if (count == 0) {
-            min = max = n;
-        }
-
-        sum += n;
-        count++;
-
-        if (n < min) {
-            min = n;
-        }
-
-        if (n > max) {
-            max = n;
         }
     }
 
-    if (count == 0){
-        printf("Nessun calcolo da eseguire.\n");
-        return 0;
-    } else {
-        printf("Minimo: %d\n", min);
-        printf("Massimo: %d\n", max);
-        printf("Somma: %d\n", sum);
-        printf("%d numeri inseriti.\n", count);
-    }
-
-    return 0;
 }

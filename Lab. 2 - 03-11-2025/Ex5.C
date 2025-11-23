@@ -2,20 +2,30 @@
 
 int main () {
 
-    for (int i = -20; i <= 197; i += 7) {
-        
-        if ((32 + ((float)i * 9) / 5) - (float)i != 100) {
+    int a, b;
+    float media = 0, sum = 0, n = 0;
 
-            printf("%.2f C -> ", (float)i);
-            printf("%.2f F\n", (32 + ((float)i * 9) / 5));
+    printf("Inserisci il primo numero: ");
+    scanf("%d", &a);
 
-        } else {
+    do {
 
-            printf("Differenza = 100, ");
-            printf("%.2f C -> ", (float)i);
-            printf("%.2f F\n", (32 + ((float)i * 9) / 5));
+        printf("Inserisci il secondo numero: ");
+        scanf("%d", &b);
 
-        }
+    } while (b <= a);
+
+    for (int i = a; i <= b; i++) {
+
+        n++;
+        sum += i;
+
     }
+
+    media = sum / n;
+
+    printf("L' intervallo è [%d, %d]\n", a, b);
+    printf("La somma dei numeri compresi tra %d e %d è: %.0f\n", a, b, sum);
+    printf("La media dei numeri compresi tra %d e %d è: %.1f\n", a, b, media);
 
 }

@@ -11,7 +11,11 @@
     "Ex3.C": "cpp",
     "Ex4.C": "cpp",
     "Ex5.C": "cpp",
-    "Ex6.C": "cpp"
+    "Ex6.C": "cpp",
+    "Ex7.C": "cpp",
+    "Ex8.C": "cpp",
+    "Ex9.C": "cpp",
+    "Ex10.C": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
