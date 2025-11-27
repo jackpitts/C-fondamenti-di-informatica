@@ -4,12 +4,10 @@ int main () {
 
     int a, b, x, tent;
     do {
-
         printf("Inserisci il primo numero (maggiore o uguale a 0): ");
         scanf("%d", &a);
         printf("Inserisci il secondo numero (maggiore del primo): ");
         scanf("%d", &b);
-
     } while (a < 0 || b <= a);
 
     do {
@@ -47,6 +45,7 @@ int main () {
 
     }
 
+    printf("\n\n");
     return 0;
 
 }
