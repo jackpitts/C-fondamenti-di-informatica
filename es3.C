@@ -63,3 +63,38 @@ int ripasso(vertice* lista, vertice** risultato){
 
     return 0;
 }
+
+int valida (vertice* lista, vertice** risultato){
+
+    int codiceErrore = 0;
+    vertice* p = lista;
+    
+    if (p->next != NULL){
+        codiceErrore = 1;
+        return 0;
+    } else if (nodistance(lista, risultato) && ripasso(lista, risultato)){
+        codiceErrore = 4;
+        return 0;
+    } else if (nodistance(lista, risultato)){
+        codiceErrore = 2;
+        return 0;
+    } else if (ripasso(lista, risultato)){
+        codiceErrore = 3;
+        return 0;
+    }
+
+    return 1;
+}
+
+int lunghezzza (vertice* lista){
+    int lunghezza = 0;
+    vertice* curr = lista;
+
+    while(curr && curr->next != NULL){
+        int dx = curr->next->x - curr->x;
+        int dy = curr->next->y - curr->y;
+        lunghezza += sqrt(dx*dx + dy*dy);
+        curr = curr->next;
+    }
+    return lunghezza;
+}
