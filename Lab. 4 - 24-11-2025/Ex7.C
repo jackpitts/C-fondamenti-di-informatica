@@ -114,7 +114,6 @@ int gameover(int mare[DIM_MARE][DIM_MARE])
 
 int main()
 {
-
     int mare[DIM_MARE][DIM_MARE];
     s_nave flotta[N_NAVI];
     srand(time(NULL));
@@ -125,7 +124,6 @@ int main()
 
     while (!gameover(mare))
     {
-
         fuoco(mare, flotta);
         stampa_mare(mare);
         stampa_flotta(flotta);

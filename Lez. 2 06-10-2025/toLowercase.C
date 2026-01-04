@@ -1,15 +1,14 @@
-
 #include <stdio.h>
-#include <ctype.h>
 
-int main() {
-    char c;
-    printf("Inserisci un carattere: ");
-    scanf(" %c", &c);
-    if ((c >= 'A') && (c <= 'Z')){
-        printf("%c\n", tolower(c));
-    } else {
-        printf("Il carattere inserito non è una lettera maiuscola.\n");
+int main () {
+
+    char str[] = "Hello, World!";
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] = str[i] + ('a' - 'A');
+        }
     }
+    printf("%s\n", str);
     return 0;
+
 }

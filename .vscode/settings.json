@@ -16,7 +16,10 @@
     "Ex8.C": "cpp",
     "Ex9.C": "cpp",
     "Ex10.C": "cpp",
-    "isLeap.C": "cpp"
+    "isLeap.C": "cpp",
+    "es1.C": "cpp",
+    "es2.C": "cpp",
+    "es3.C": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
