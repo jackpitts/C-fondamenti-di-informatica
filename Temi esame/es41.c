@@ -1,31 +1,53 @@
+#define N 4
+#include <math.h>
 #include <stdio.h>
-#define m 6
-#define n 6
-int M[m][n];
+typedef unsigned int riga[N];
+riga M[N] = {
+    {4,10,5,1},
+    {0,2,6,0},
+    {7,4,12,8},
+    {0,7,8,0}
+};
+
+double geodist (int s1, int s2){
+    return abs(s2 - s1);
+}
 
 int main (){
-    int VV;
-    printf("Inserisci un numero da 1 a 10: ");
-    scanf("%d", &VV);
-    if (VV < 1 || VV > 10){
-        printf("Numero non valido\n");
-        return -1;
+
+    if (N == 1){
+        printf("Diagonale perde");
+        return 0;
+    }
+    // Lunghezza diagonale
+    int diag_len = 0;
+    for (int i = 0; i < N; i++){
+        diag_len += M[i][i];
     }
 
-    for (int i = 0, j = m-1; i <= j; i++, j--){
-        for (int k = 0; k < n; k++){
-            M[i][k] = VV;
-            M[j][k] = VV;
+    // Lunghezza orizzontale
+    int horiz_len = 0;
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < N; j++){
+            horiz_len += M[i][j];
         }
-        VV = VV + 1;
+        if (horiz_len > diag_len){
+            printf("Diagonale perde");
+            return 0;
+        }
     }
 
-    // Stampa matrice
-    for (int i = 0; i < m; i++){
-        for (int j = 0; j < n; j++){
-            printf("%d\t", M[i][j]);
+    // Lunghezza verticale
+    int vert_len = 0;
+    for (int j = 0; j < N; j++){
+        for (int i = 0; i < N; i++){
+            vert_len += M[i][j];
         }
-        printf("\n");
+        if (vert_len > diag_len){
+            printf("Diagonale perde");
+            return 0;
+        }
     }
+    printf("Diagonale vince");
     return 0;
 }
