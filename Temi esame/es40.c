@@ -26,7 +26,7 @@ int inserisci(struct el **primo, struct el **ultimo, int v, struct el *sep)
         if (curr == sep)
         {
             trovato = 1;
-            curr = curr->successivo; // <-- AGGIUNGI QUESTA RIGA
+            curr = curr->successivo;
             break;
         }
         curr = curr->successivo;
